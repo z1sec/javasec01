@@ -6,7 +6,7 @@ WORKDIR /opt
 # RUN apt-get update && apt-get install -y bc
 
 # 将当前目录下的 JAR 文件复制到容器中的 /opt 目录
-COPY ./src/JavaSec01-0.0.1-SNAPSHOT.jar /opt/
+COPY JavaSec01-0.0.1-SNAPSHOT.jar /opt/
 
 RUN echo "flag{e50aaffa88c8f931b8d0a8188a5b8397}" > /flag
 
